@@ -42,7 +42,9 @@ async def increase_karma_handler(client: Client, message: Message):
     await karma_db.increase_karma(target_user_id, name , chat_id)
     await message.reply_text(f"Increased karma for **{message.reply_to_message.from_user.mention}**")
 
-@app.on_message(filters.regex(r"^(?i)(-|--|-1|not cool|disagree|worst|bad|👎|-- .+)$") & filters.group & filters.reply)
+@app.on_message(filters.regex(
+    r"(?i)^(-|--|-1|not cool|disagree|worst|bad|👎|-- .+)$"
+) & filters.group & filters.reply)
 async def decrease_karma_handler(client: Client, message: Message):
 
     target_user_id = message.reply_to_message.from_user.id
