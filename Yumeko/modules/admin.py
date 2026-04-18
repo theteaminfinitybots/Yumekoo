@@ -63,7 +63,7 @@ async def update_all_admin_cache(client, message: Message):
         await message.reply(CHAT_ADMIN_REQUIRED)
 
 @app.on_message(filters.command("pin", prefixes=c.COMMAND_PREFIXES) & filters.group)
-@app.on_message(filters.regex(r"^(?i)Pin It$") & filters.group & filters.reply)
+@app.on_message(filters.regex(r"(?i)^Pin It$") & filters.group & filters.reply)
 @can_pin_messages
 @error
 @save
