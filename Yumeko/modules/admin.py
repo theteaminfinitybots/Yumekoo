@@ -736,7 +736,7 @@ async def promote_user(client: app, message: Message):  # type: ignore
 
 
 @app.on_message(filters.command("fullpromote", prefixes=c.COMMAND_PREFIXES) & filters.group)
-@app.on_message(filters.regex(r"^(?i)Fullpromote (him|her)$") & filters.group & filters.reply)
+@app.on_message(filters.regex(r"(?i)^Lowpromote (him|her)$") & filters.group & filters.reply)
 @can_promote_members
 @error
 @save
