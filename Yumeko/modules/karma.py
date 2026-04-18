@@ -31,8 +31,8 @@ async def show_top_karma(client: Client, message: Message):
     await message.reply_text(f"🏆 **Top Karma Users in this Group**\n\n{leaderboard}")
 
 @app.on_message(filters.regex(
-        r"(?i)^(\+|\+\+|\+1|thx|tnx|ty|tq|thank you|thanx|thanks|pro|cool|good|agree|makasih|👍|\+\+ .+)$"
-    ) & filters.group & filters.reply)
+    r"(?i)^(-|--|-1|not cool|disagree|worst|bad|👎|-- .+)$"
+) & filters.group & filters.reply)
 async def increase_karma_handler(client: Client, message: Message):
     target_user_id = message.reply_to_message.from_user.id
     chat_id = message.chat.id
