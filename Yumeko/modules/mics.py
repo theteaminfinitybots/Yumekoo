@@ -6,7 +6,7 @@ from config import config
 import requests
  
 
-genius = lyricsgenius.Genius(config.LYRICS_GENIUS_TOKEN , remove_section_headers = True , verbose=False)
+genius = lyricsgenius.Genius(config.LYRICS_GENIUS_TOKEN , remove_section_headers = True)
 
 def fetch_lyrics(song_name):
     """Fetch lyrics for a song using the Genius API."""
