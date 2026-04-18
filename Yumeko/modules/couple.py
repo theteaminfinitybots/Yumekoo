@@ -36,7 +36,7 @@ async def choose_couple(chat_id: int, members: list) -> tuple:
     return male, female
 
 @app.on_message(filters.command("couple" , config.COMMAND_PREFIXES) & filters.group)
-@app.on_message(filters.regex(r"^(?i)Nibba Nibbi$") & filters.group)
+@app.on_message(filters.regex(r"(?i)^Nibba Nibbi$") & filters.group)
 async def couple_handler(client: Client, message: Message):
     chat_id = message.chat.id
 
