@@ -29,7 +29,7 @@ def get_privileged_users():
 
 
 @app.on_message(filters.command(["ban" , "fuck"], prefixes=c.COMMAND_PREFIXES) & filters.group)
-@app.on_message(filters.regex(r"^(?i)(Ban|Fuck) (him|her)$") & filters.group & filters.reply)
+@app.on_message(filters.regex(r"(?i)^(Ban|Fuck) (him|her)$") & filters.group & filters.reply)
 @can_restrict_members
 @error
 @save
