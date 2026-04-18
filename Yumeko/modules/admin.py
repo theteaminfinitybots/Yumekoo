@@ -136,7 +136,7 @@ async def pin_message(client, message: Message):
 
 # Unpin a specific message
 @app.on_message(filters.command("unpin" , prefixes=c.COMMAND_PREFIXES) & filters.group)
-@app.on_message(filters.regex(r"^(?i)Unpin It$") & filters.group & filters.reply)
+@app.on_message(filters.regex(r"(?i)^Unpin It$") & filters.group & filters.reply)
 @can_pin_messages
 @error
 @save
