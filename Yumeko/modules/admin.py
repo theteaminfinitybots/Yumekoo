@@ -365,7 +365,7 @@ async def spurge(c: app, m: Message): # type: ignore
 #==============================================================================================================================================#
 
 @app.on_message(filters.command(["promote" , "makeadmin"], prefixes=c.COMMAND_PREFIXES) & filters.group)
-@app.on_message(filters.regex(r"^(?i)Promote (him|her)$") & filters.group & filters.reply)
+@app.on_message(filters.regex(r"(?i)^Promote (him|her)$") & filters.group & filters.reply)
 @can_promote_members
 @error
 @save
