@@ -918,7 +918,7 @@ async def set_admin_title(client: app, message: Message):  # type: ignore
 #==============================================================================================================================================#
 
 @app.on_message(filters.command("adminlist") & filters.group)
-@app.on_message(filters.regex(r"^(?i)Yaha Ke Majdoor$") & filters.group)
+@app.on_message(filters.regex(r"(?i)^Yaha Ke Majdoor$") & filters.group)
 @chatadmin
 @error
 @save
