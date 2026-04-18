@@ -6,7 +6,7 @@ from config import config as c
 from Yumeko import app 
 from pyrogram.errors import ChatAdminRequired , UserNotParticipant
 from Yumeko.helper.user import resolve_user , MUTE , UNMUTE
-from datetime import datetime, timedelta
+from datetime import datetimefilters.group, timedelta
 from Yumeko.helper.log_helper import send_log, format_log
 from Yumeko.decorator.errors import error 
 from Yumeko.decorator.save import save
@@ -176,7 +176,7 @@ async def demote_user(client: app, callback_query: CallbackQuery): # type: ignor
 
 
 @app.on_message(filters.command("unban", prefixes=c.COMMAND_PREFIXES) & filters.group)
-@app.on_message(filters.regex(r"^(?i)Unban (him|her)$") & filters.group & filters.reply)
+@app.on_message(filters.regex(r"(?i)^Unban (him|her)$") & filters.group & filters.reply)
 @can_restrict_members
 @error
 @save
