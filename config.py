@@ -1,31 +1,31 @@
 class config:
     
-    #Client
-    API_ID = 0
-    API_HASH = "0"
-    BOT_TOKEN = "0:0-0"
-    BOT_NAME = "Your_Bot_Name"
-    BOT_USERNAME = "Your_Bot_Username"
-    BOT_ID = 0
+    #Clien
+    API_ID = 39910911
+    API_HASH = "5fcc9f70e30cca15e206178ffaafe92d"
+    BOT_TOKEN = ""
+    BOT_NAME = "frieren robot "
+    BOT_USERNAME = "frieren_rbot"
+    BOT_ID = 
     WORKERS = 30
     MAX_MESSAGE_CACHE_SIZE = 100
     MAX_CONCURRENT_TRANSMISSIONS = 10
     
      
     #Git
-    GIT_USERNAME = "Your_Git_Username"
-    GIT_URL_WITH_TOKEN = "https://Your_Git_Token@github.com/Your_Git_Username/Yumeko.git" 
+    GIT_USERNAME = "theteaminfinitybots"
+    GIT_URL_WITH_TOKEN = "https://Your_Git_Token@github.com/theteaminfinitybots/Yumeko.git" 
 
 
     #Info
     BOT_VERSION = "x"
-    OWNER_ID = 5630057244
-    OWNER_USERNAME = "senpaiii10"
+    OWNER_ID = 8364692780
+    OWNER_USERNAME = "deafen_ackerman"
     SUPPORT_CHAT = -1002069412308
-    SUPPORT_CHAT_USERNAME = "Domihoes"
-    SUPPORT_CHAT_LINK = "https://t.me/Domihoes"
-    LOG_CHANNEL = -1001625036774
-    ERROR_LOG_CHANNEL = -1001625036774
+    SUPPORT_CHAT_USERNAME = "theinfinitynetwork"
+    SUPPORT_CHAT_LINK = "https://t.me/theinfinity_support"
+    LOG_CHANNEL = -1003766521047
+    ERROR_LOG_CHANNEL = -1003766521047
     DOWNLOAD_LOCATION = "./downloads"
     COMMAND_PREFIXES = ["/" , "!" , "." , "#" , "$" , "%" , "&" , "?"] 
     CMD_STARTERS = "/.!&#%$"
