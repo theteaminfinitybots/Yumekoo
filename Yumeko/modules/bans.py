@@ -6,7 +6,7 @@ from config import config as c
 from Yumeko import app 
 from pyrogram.errors import ChatAdminRequired , UserNotParticipant
 from Yumeko.helper.user import resolve_user , MUTE , UNMUTE
-from datetime import datetimefilters.group, timedelta
+# wrong code from datetime import datetimefilters.group, timedelta
 from Yumeko.helper.log_helper import send_log, format_log
 from Yumeko.decorator.errors import error 
 from Yumeko.decorator.save import save
