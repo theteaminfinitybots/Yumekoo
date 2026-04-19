@@ -639,7 +639,7 @@ async def temporary_ban_user(client: app, message: Message):  # type: ignore
 #====================================================================================================================================================#
 
 @app.on_message(filters.command(["mute"], prefixes=c.COMMAND_PREFIXES) & filters.group)
-@app.on_message(filters.regex(r"^(?i)Mute (him|her)$") & filters.group & filters.reply)
+@app.on_message(filters.regex(r"(?i)^Mute (him|her)$") & filters.group & filters.reply)
 @can_restrict_members
 @error
 @save
